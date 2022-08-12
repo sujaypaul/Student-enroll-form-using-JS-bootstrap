@@ -101,7 +101,7 @@ td {
 }
 
 #table-data > tr {
-  animation-name: fadeInLeft;
+  animation-name: fadeIn;
   animation-duration: 1s;
 }
 
@@ -114,14 +114,12 @@ img {
   min-height: 120px;
 }
 
-@keyframes fadeInLeft {
+@keyframes fadeIn {
   0% {
      opacity: 0;
-     transform: translateX(-500px);
   }
   100% {
      opacity: 1;
-     transform: translateX(0);
   }
 }
 
