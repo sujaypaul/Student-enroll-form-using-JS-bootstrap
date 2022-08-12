@@ -62,7 +62,7 @@ main {
 
 
 /* validations */
-.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+/* .form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
   color: #0c0c0c;
 }
 
@@ -72,11 +72,12 @@ main {
 
 .valid-feedback{
  color: #2acc80;
-}
+} */
 
 .enrolled-section {
   max-height: 28rem;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .table-striped > tbody > tr:nth-child(even) > td {

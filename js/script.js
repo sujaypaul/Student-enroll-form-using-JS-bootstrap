@@ -4,55 +4,24 @@ const pageAnimation = () => {
 
 
 
-(function () {
-  'use strict'
-  const forms = document.querySelectorAll('.requires-validation')
-  Array.from(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-  
-        form.classList.add('was-validated')
-      }, false)
-    })
+// (() => {
+//   'use strict'
 
+//   // Fetch all the forms we want to apply custom Bootstrap validation styles to
+//   const forms = document.querySelectorAll('.requires-validation')
 
-    window.addEventListener('load', function () {
-           // Fetch all the forms we want to apply custom Bootstrap validation styles to
-           var forms = document.getElementsByClassName('needs-validation');
-           // Loop over them and prevent submission
-           var validation = Array.prototype.filter.call(forms, function (form) {
-               form.addEventListener('submit', function (event) {
-      
-                   var failed = false;
-      
-                   if ($("[name='select']:checked").length == 0) {
-                       $("[name='select']").attr('required', true);
-                       failed = true;
-                   }
-                   else {
-                       $("[name='select']").attr('required', false);
-                   }
-      
-                   if (form.checkValidity() === false) {
-                       failed = true;
-                   }
-      
-                   if (failed == true) {
-                       event.preventDefault();
-                       event.stopPropagation();
-                   }
-      
-                   form.classList.add('was-validated');
-               }, false);
-           });
-       }, false);
+//   // Loop over them and prevent submission
+//   Array.from(forms).forEach(form => {
+//     form.addEventListener('submit', event => {
+//       if (!form.checkValidity()) {
+//         event.preventDefault()
+//         event.stopPropagation()
+//       }
 
-
-  })()
+//       form.classList.add('was-validated')
+//     }, false)
+//   })
+// })()
 
 let flag = false;
 
