@@ -60,6 +60,20 @@ main {
   height: 2px;
 }
 
+
+/* validations */
+.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+  color: #0c0c0c;
+}
+
+.invalid-feedback{
+  color: #ff606e;
+}
+
+.valid-feedback{
+ color: #2acc80;
+}
+
 .enrolled-section {
   max-height: 28rem;
   overflow-y: auto;
@@ -117,6 +131,11 @@ footer {
   background-color: var(--color-primary);
   padding: 0.5rem 1rem;
   bottom: 0;
+}
+
+label {
+  display: inline-block;
+  padding-right: 20px;
 }
 
 svg {

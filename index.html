@@ -41,7 +41,8 @@
                 <div class="col-12 col-lg-5">
                     <div class="container mx-lg-5">
 
-                        <form method="POST" action="#" onsubmit="onSubmit(); return false">
+                        <form method="POST" action="#" onsubmit="onSubmit(); return false" 
+                            class="requires-validation" novalidate>
                             <!-- Input Name -->
                             <div class="form-group row mb-3">
                                 <label for="inputName" class="col-12 col-md-4 py-1">Name</label>
@@ -52,7 +53,14 @@
                                         name="name" 
                                         aria-describedby="Name" 
                                         placeholder="Enter Name" 
-                                        required />
+                                        required 
+                                    />
+                                    <div class="valid-feedback">
+                                        Name is valid!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Name field cannot be blank!
+                                    </div>
                                 </div>
                             </div>
 
@@ -66,7 +74,14 @@
                                         name="email" 
                                         required aria-describedby="Email" 
                                         placeholder="Enter Email" 
-                                        required/>
+                                        required
+                                    />
+                                    <div class="valid-feedback">
+                                        Email is valid!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Enter a valid Email ID
+                                    </div>
                                 </div>
                             </div>
 
@@ -74,13 +89,20 @@
                             <div class="form-group row mb-3">
                                 <label for="inputWebsite" class="col-12 col-md-4 py-1">Website</label>
                                 <div class="col-sm-6">
-                                    <input type="text" 
+                                    <input type="url" 
                                         class="form-control col-12 col-md-8" 
                                         id="inputWebsite" 
                                         name="website" 
                                         aria-describedby="Website" 
                                         placeholder="Enter Website link" 
-                                        required />
+                                        required 
+                                    />
+                                    <div class="valid-feedback">
+                                        URL is valid!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Enter a valid URL
+                                    </div>
                                 </div>
                             </div>
 
@@ -88,12 +110,19 @@
                             <div class="form-group row mb-3">
                                 <label for="inputImage" class="col-12 col-md-4 py-1">Image link</label>
                                 <div class="col-sm-6">
-                                <input type="text" 
+                                <input type="url" 
                                     class="form-control col-12 col-md-8" 
                                     id="inputImage" 
                                     name="image" 
                                     required aria-describedby="Image" 
-                                    placeholder="Image Url" />
+                                    placeholder="Image Url" 
+                                    />
+                                    <div class="valid-feedback">
+                                        URL is valid!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Enter a valid URL
+                                    </div>
                                 </div>
                             </div>
 
@@ -122,6 +151,7 @@
                                         <label class="form-check-label" for="exampleRadios2">
                                             Female
                                         </label>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -131,41 +161,46 @@
                                 <label for="inputSkills" class="col-12 col-md-4 py-1">Skills</label>
                                 <div class="col">
 
-                                    <div class="form-check form-check-inline">
+                                    <!-- <div class="form-check form-check-inline"> -->
                                         <input class="form-check-input mb-2" 
                                             type="checkbox" 
                                             value="Java" 
                                             name="skills" 
                                             id="inputJava" 
                                             checked />
-                                        <label class="form-check-label" for="InputJava">
+                                        <label class="form-check-label mr-2" for="InputJava">
                                             Java
                                         </label>
-                                    </div>
+                                    <!-- </div> -->
 
-                                    <div class="form-check form-check-inline">
+                                    <!-- <div class="form-check form-check-inline"> -->
                                         <input class="form-check-input mb-2" 
                                             type="checkbox" 
                                             value="HTML" 
                                             name="skills" 
-                                            id="inputHTML" />
+                                            id="inputHTML" 
+                                            />
                                         <label class="form-check-label" for="InputJava">
                                             HTML
                                         </label>
-                                    </div>
+                                    <!-- </div> -->
 
-                                    <div class="form-check form-check-inline">
+                                    <!-- <div class="form-check form-check-inline"> -->
                                         <input class="form-check-input mb-2" 
                                             type="checkbox" 
                                             value="CSS" 
                                             name="skills" 
-                                            id="inputCSS" />
+                                            id="inputCSS"
+                                            />
                                         <label class="form-check-label" for="InputCSS">
                                             CSS
                                         </label>
-                                    </div>
+                                    <!-- </div> -->
+
 
                                 </div>
+                            
+                            
                             </div>
 
                             <!-- buttons -->
